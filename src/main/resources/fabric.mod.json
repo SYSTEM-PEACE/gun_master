@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "gun_master",
+  "version": "${version}",
+  "name": "Master of gunsmiths ",
+  "description": "",
+  "authors": [
+    "syspeace"
+  ],
+  "contact": {
+    "repo": "https://github.com/SYSTEM-PEACE/Master_of_gunsmiths "
+  },
+  "license": "AGPL-3.0",
+  "icon": "assets/gun_master/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.syspeace.gun_master.gun_master.client.MasterOfGunsmithsClient"
+    ],
+    "main": [
+      "com.syspeace.gun_master.gun_master.MasterOfGunsmiths"
+    ]
+  },
+  "mixins": [
+    "gun_master.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
